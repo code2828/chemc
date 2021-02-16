@@ -1,6 +1,5 @@
 package com.byethost8.code2828.mcmods.chemc;
 
-import com.byethost8.code2828.mcmods.chemc.items.ChemProperties;
 import com.byethost8.code2828.mcmods.chemc.items.Hydrogen;
 import com.byethost8.code2828.mcmods.chemc.items.Oxygen;
 
@@ -15,8 +14,10 @@ import net.minecraftforge.fml.event.lifecycle.FMLCommonSetupEvent;
 import net.minecraftforge.fml.javafmlmod.FMLJavaModLoadingContext;
 
 // The value here should match an entry in the META-INF/mods.toml file
-@Mod("chemc")
+@Mod(CheMC.modid)
 public class CheMC {
+
+    public static final String modid = "chemc";
     static Item i_h = new Hydrogen(new Properties()).setRegistryName("chemc", "hydrogen");
     static Item i_o = new Oxygen(new Properties()).setRegistryName("chemc", "oxygen");
 
