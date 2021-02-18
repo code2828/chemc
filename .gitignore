@@ -22,8 +22,6 @@ eclipse
 run
 .vscode
 *.zip
-*.jar
-*.class
 
 # Files from Forge MDK
 forge*changelog.txt
