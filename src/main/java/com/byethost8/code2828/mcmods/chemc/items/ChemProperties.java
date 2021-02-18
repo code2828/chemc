@@ -17,12 +17,24 @@ public class ChemProperties {
         doOxidation = doo;
         oxidationSpeed = oxisp;
         oxidationAge = oxiage;
-        mn = molNumber;
+        molNumber = mn;
         state = stt;
+    }
+
+    public ChemProperties() {
+        density = 1;
+        doOxidation = false;
+        oxidationAge = 0;
+        oxidationSpeed = 0;
+        molNumber = 1;
     }
 
     public void setMolNumber(double moln) {
         molNumber = moln;
+    }
+
+    public void setDensity(double denss) {
+        density = denss;
     }
 
     public double getDensity() {

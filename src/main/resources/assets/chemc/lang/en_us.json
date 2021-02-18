@@ -1,4 +1,7 @@
 {
     "item.chemc.hydrogen": "Hydrogen [H2(g)]",
-    "item.chemc.oxygen": "Oxygen [O2(g)]"
+    "item.chemc.oxygen": "Oxygen [O2(g)]",
+    "item.chemc.nitrogen": "Nitrogen [N2(g)]",
+    "item.chemc.chlorine": "Chlorine [Cl2(g)]",
+    "item.chemc.hydrogen_chloride": "Hydrogen Chloride [HCl(g)]"
 }

@@ -1,6 +1,9 @@
 package com.byethost8.code2828.mcmods.chemc;
 
+import com.byethost8.code2828.mcmods.chemc.items.Chlorine;
 import com.byethost8.code2828.mcmods.chemc.items.Hydrogen;
+import com.byethost8.code2828.mcmods.chemc.items.HydrogenChloride;
+import com.byethost8.code2828.mcmods.chemc.items.Nitrogen;
 import com.byethost8.code2828.mcmods.chemc.items.Oxygen;
 
 import net.minecraft.block.Block;
@@ -20,7 +23,9 @@ public class CheMC {
     public static final String modid = "chemc";
     static Item i_h = new Hydrogen(new Properties()).setRegistryName("chemc", "hydrogen");
     static Item i_o = new Oxygen(new Properties()).setRegistryName("chemc", "oxygen");
-
+    static Item i_n = new Nitrogen(new Properties()).setRegistryName("chemc","nitrogen");
+    static Item i_cl = new Chlorine(new Properties()).setRegistryName("chemc","chlorine");
+    static Item i_hcl = new HydrogenChloride(new Properties()).setRegistryName("chemc","hydrogen_chloride");
     public CheMC() {
         FMLJavaModLoadingContext.get().getModEventBus().addListener(this::setup);
         MinecraftForge.EVENT_BUS.register(this);
@@ -43,7 +48,7 @@ public class CheMC {
         @SubscribeEvent
         public static void onItemsRegistry(final RegistryEvent.Register<Item> itemRegistryEvent) {
             // register a new item here
-            itemRegistryEvent.getRegistry().registerAll(i_h,i_o);
+            itemRegistryEvent.getRegistry().registerAll(i_h,i_o,i_n,i_cl,i_hcl);
         }
     }
 }
