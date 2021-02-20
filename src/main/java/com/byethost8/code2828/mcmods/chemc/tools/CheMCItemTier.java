@@ -9,7 +9,7 @@ import net.minecraft.item.crafting.Ingredient;
 import net.minecraft.util.LazyValue;
 
 public enum CheMCItemTier implements IItemTier {
-    SOFT_METAL(1, 24, 4.0F, 1.0F, 32, () -> {
+    SOFT_METAL(1, 24, 8.0F, 1.0F, 32, () -> {
         return Ingredient.fromItems(CheMC.pickaxe_lithium);
     });
 
