@@ -2,6 +2,7 @@ package com.byethost8.code2828.mcmods.chemc.items;
 
 public class ChemProperties {
 
+    // TODO: Add a enum that allows choice of bottle, ingot, testtube.
     private double density;
     private boolean doOxidation = false;
     private int oxidationSpeed = 7;
