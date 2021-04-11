@@ -10,7 +10,10 @@ import net.minecraft.util.LazyValue;
 
 public enum CheMCItemTier implements IItemTier {
     SOFT_METAL(1, 24, 8.0F, 1.0F, 32, () -> {
-        return Ingredient.fromItems(CheMC.pickaxe_lithium);
+        return Ingredient.fromItems(CheMC.i_li);
+    }),
+    STRONG_MAO(3, 2048, 8.0F, 1.0F, 32, () -> { // MAO = Metals And their Oxides
+        return Ingredient.fromItems(CheMC.i_li);
     });
 
     private final int harvestLevel;
