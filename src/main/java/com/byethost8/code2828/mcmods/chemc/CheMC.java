@@ -12,6 +12,10 @@ import net.minecraft.item.BlockItem;
 import net.minecraft.item.HoeItem;
 import net.minecraft.item.Item;
 import net.minecraft.item.Item.Properties;
+import net.minecraft.util.registry.Registry;
+import net.minecraft.util.registry.WorldGenRegistries;
+import net.minecraft.world.gen.feature.OreFeature;
+import net.minecraft.world.gen.placement.Placement;
 import net.minecraft.item.ItemGroup;
 import net.minecraft.item.PickaxeItem;
 import net.minecraft.item.ShovelItem;
@@ -22,6 +26,7 @@ import net.minecraftforge.eventbus.api.SubscribeEvent;
 import net.minecraftforge.fml.common.Mod;
 import net.minecraftforge.fml.event.lifecycle.FMLCommonSetupEvent;
 import net.minecraftforge.fml.javafmlmod.FMLJavaModLoadingContext;
+import net.minecraftforge.registries.IForgeRegistryEntry;
 
 // The value here should match an entry in the META-INF/mods.toml file
 @Mod(CheMC.modid)
@@ -163,5 +168,10 @@ public class CheMC {
                     i_block_lithium
                 );
         }
+    }
+
+    @Mod.EventBusSubscriber(bus = Mod.EventBusSubscriber.Bus.MOD)
+    public static class OreGeneration {
+        
     }
 }
