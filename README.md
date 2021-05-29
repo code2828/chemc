@@ -1,3 +1,7 @@
+## This mod has been moved to [here](https://github.com/code2828/chemc-fabric). This repository will therefore be archived, as a sign to [Fabric Version](https://github.com/code2828/chemc-fabric) and [Forge Version](https://github.com/code2828/chemc-forge). Thanks to everyone who supported in this mod while it's using forge.
+
+
+
 # chemc mod for Minecraft
 
 This mod is still under heavy development.
